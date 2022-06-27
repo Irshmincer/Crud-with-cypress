@@ -42,9 +42,9 @@
                 (userform.get('dob')?.dirty || userform.get('dob')?.touched)}"></p-calendar> -->
                 <div class="input-group has-validation">
     
-                    <mat-form-field style="width: 100%;" appearance="fill">
+                    <mat-form-field style="width: 100%;" appearance="outline">
                         <mat-label>Choose a date</mat-label>
-                        <input matInput formControlName="dob" id="picker" class="dob" [matDatepicker]="picker">
+                        <input  matInput formControlName="dob" id="picker" class="dob" [matDatepicker]="picker">
                         <mat-hint>MM/DD/YYYY</mat-hint>
                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-datepicker  #picker></mat-datepicker>
